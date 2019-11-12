@@ -1,0 +1,36 @@
+{
+  "expo": {
+    "name": "spyfall",
+    "slug": "spyfall",
+    "privacy": "public",
+    "sdkVersion": "35.0.0",
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "version": "3.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/spy.png",
+    "splash": {
+      "image": "./assets/spy-splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.taavi.spyfall"
+    },
+    "android": {
+      
+      "versionCode": 3,
+      "package": "com.taavi.spyfall",
+      "permissions": []
+    }
+  }
+}
