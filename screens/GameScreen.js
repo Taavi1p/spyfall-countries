@@ -3,15 +3,8 @@ import { StyleSheet, Text, View, Image, ScrollView} from 'react-native';
 import CustomHeader from '../components/CustomHeader';
 import MainButton from '../components/MainButton';
 import Basics from '../packs/BasicPack';
-import Basics2 from '../packs/BasicPack2';
-import Basics3 from '../packs/BasicPack3';
-import Basics4 from '../packs/BasicPack4';
-import Exotic from '../packs/ExoticPack';
-import Exotic2 from '../packs/ExoticPack2';
-import Town from '../packs/TownPack';
-import Movies from '../packs/MoviesPack';
-import TVShows from '../packs/TVShowsPack';
-import Videogames from '../packs/VideogamesPack';
+import Asia from '../packs/AsiaPack';
+import Europe from '../packs/EuropePack';
 // import { useSelector } from 'react-redux';
 // ---------use Redux later-----------------
 
@@ -29,15 +22,8 @@ const GameScreen = props => {
         props.navigation.navigate({routeName: 'Start'})
     }
     const isBasics = props.navigation.getParam('isBasics');
-    const isBasics2 = props.navigation.getParam('isBasics2');
-    const isMovies = props.navigation.getParam('isMovies');
-    const isTVShows = props.navigation.getParam('isTVShows');
-    const isBasics3 = props.navigation.getParam('isBasics3');
-    const isBasics4 = props.navigation.getParam('isBasics4');
-    const isExotic = props.navigation.getParam('isExotic');
-    const isExotic2 = props.navigation.getParam('isExotic2');
-    const isTown = props.navigation.getParam('isTown');
-    const isVideogames = props.navigation.getParam('isVideogames');
+    const isAsia = props.navigation.getParam('isAsia');
+    const isEurope = props.navigation.getParam('isEurope');
     let TimeButton;
     let intervally;
     const [timer, setTimer] = useState('8:00');
@@ -87,46 +73,21 @@ const GameScreen = props => {
    }
     
     let BasicPics;
-    let BasicPics2;
-    let BasicPics3;
-    let BasicPics4;
-    let ExoticPics;
-    let ExoticPics2;
-    let MoviePics;
-    let TownPics;
-    let TVShowPics;
-    let VideogamesPics;
+    let AsiaPics;
+    let EuropePics;
     
     if (isBasics) {
         BasicPics = <Basics />
     }
-    if (isBasics2) {
-        BasicPics2 = <Basics2 />
+     
+    if (isAsia) {
+        AsiaPics = <Asia />
     }
-    if (isBasics3) {
-        BasicPics3 = <Basics3 />
+     
+    if (isEurope) {
+        EuropePics = <Europe/>
     }
-    if (isBasics4) {
-        BasicPics4 = <Basics4 />
-    }
-    if (isExotic) {
-        ExoticPics = <Exotic />
-    }
-    if (isExotic2) {
-        ExoticPics2 = <Exotic2 />
-    }
-    if (isTown) {
-        TownPics = <Town />
-    }
-    if (isVideogames) {
-        VideogamesPics = <Videogames />
-    }
-    if (isMovies) {
-        MoviePics = <Movies />
-    }
-    if (isTVShows) {
-        TVShowPics = <TVShows />
-    }
+    
 
     console.log(isMovies);
     console.log(isVideogames);
@@ -137,15 +98,8 @@ const GameScreen = props => {
             <CustomHeader onClick={goToStart}>end game</CustomHeader>
             <ScrollView>
             {BasicPics}
-            {BasicPics2}
-            {BasicPics3}
-            {BasicPics4}
-            {ExoticPics}
-            {ExoticPics2}
-            {MoviePics}
-            {TownPics}
-            {TVShowPics}
-            {VideogamesPics}
+            {AsiaPics}
+            {EuropePics}
             </ScrollView>
             <View style={styles.buttons}>
                 <LinearGradient colors={[ Colors.primary, Colors.primary, Colors.secondary]} style={styles.gradient}>

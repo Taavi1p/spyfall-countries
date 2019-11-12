@@ -9,15 +9,9 @@ import { LinearGradient } from 'expo-linear-gradient';
 
 const StartScreen = props => {
     const isBasics = props.navigation.getParam('isBasics');
-    const isBasics2 = props.navigation.getParam('isBasics2');
-    const isBasics3 = props.navigation.getParam('isBasics3');
-    const isBasics4 = props.navigation.getParam('isBasics4');
-    const isExotic = props.navigation.getParam('isExotic');
-    const isExotic2 = props.navigation.getParam('isExotic2');
-    const isTown = props.navigation.getParam('isTown');
-    const isVideogames = props.navigation.getParam('isVideogames');
-    const isMovies = props.navigation.getParam('isMovies');
-    const isTVShows = props.navigation.getParam('isTVShows');
+    const isAsia = props.navigation.getParam('isAsia');
+    const isEurope = props.navigation.getParam('isEurope');
+
     const [playersNumber, setPlayersNumber] = useState(5);
     const [spiesNumber, setSpiesNumber] = useState(1);
     const [spyText, setSpyText] = useState('spy');
@@ -63,12 +57,10 @@ const StartScreen = props => {
     const [ErrorText, setErrorText] = useState(<View style={styles.emptyBox}></View>) ;
 
     const startGame = () => {
-        if (isBasics || isBasics2 || isBasics3 || isBasics4 || isExotic || isExotic2 || isMovies || isTown || isVideogames ) {
+        if (isBasics || isAsia || isEurope ) {
         props.navigation.navigate({routeName: 'Picking', params: {
             spyAmount: spiesNumber, playerAmount: playersNumber,
-            isBasics: isBasics, isBasics2: isBasics2, isMovies: isMovies, isTVShows: isTVShows,
-            isExotic: isExotic, isExotic2: isExotic2, isTown: isTown, isVideogames: isVideogames,
-            isBasics3: isBasics3, isBasics4: isBasics4
+            isBasics: isBasics, isAsia: isAsia, isEurope: isEurope
 
         }})
         setErrorText(<View style={styles.emptyBox}></View>)
@@ -90,14 +82,13 @@ const StartScreen = props => {
     }
 
     if (firstRender) {
-        props.navigation.setParams({isBasics: true, isBasics2: true, isMovies: false, isTVShows: false,
-            isExotic: false, isExotic2: false, isTown: false, isVideogames: false,
-            isBasics3: false, isBasics4: false})
+        props.navigation.setParams({isBasics: true, })
         setFirstRender(false)
     }
 
-    console.log(isMovies);
-    console.log(isVideogames);
+    console.log(isBasics);
+    console.log(isAsia);
+    console.log(isEurope);
 
     return (
         <View style={styles.container}>

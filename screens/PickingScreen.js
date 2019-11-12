@@ -5,15 +5,8 @@ import BlackBox from '../components/BlackBox';
 import Card from '../components/Card';
 import * as Animatable from 'react-native-animatable';
 import Basics from '../data/basics';
-import Basics2 from '../data/basics2';
-import Basics3 from '../data/basics3';
-import Basics4 from '../data/basics4';
-import Exotic from '../data/exotic';
-import Exotic2 from '../data/exotic2';
-import Movies from '../data/movies';
-import Town from '../data/town';
-import TVShows from '../data/tvshows';
-import Videogames from '../data/videogames';
+import Asia from '../data/asia';
+import Europe from '../data/europe';
 // import { useSelector } from 'react-redux';
 // ------------use redux later---------------
 
@@ -22,15 +15,8 @@ const PickingScreen = props => {
     const playerNumber = props.navigation.getParam('playerAmount');
     const spiesNumber = props.navigation.getParam('spyAmount');
     const isBasics = props.navigation.getParam('isBasics');
-    const isBasics2 = props.navigation.getParam('isBasics2');
-    const isMovies = props.navigation.getParam('isMovies');
-    const isTVShows = props.navigation.getParam('isTVShows');
-    const isBasics3 = props.navigation.getParam('isBasics3');
-    const isBasics4 = props.navigation.getParam('isBasics4');
-    const isExotic = props.navigation.getParam('isExotic');
-    const isExotic2 = props.navigation.getParam('isExotic2');
-    const isTown = props.navigation.getParam('isTown');
-    const isVideogames = props.navigation.getParam('isVideogames');
+    const isAsia = props.navigation.getParam('isAsia');
+    const isEurope = props.navigation.getParam('isEurope');
     const [roleVisible, setRoleVisible] = useState(false);
     const [randomLocation, setRandomLocation] = useState(Math.floor(Math.random()*9));
     const [location, setLocation] = useState('');
@@ -42,10 +28,6 @@ const PickingScreen = props => {
     const [locationArray, setLocationArray] = useState([]);
     const [randomPack, setRandomPack] = useState(Math.floor(Math.random()*(locationArray.length + 1)));
 
-    // console.log(isBasics)
-    // console.log(isMovies)
-    // console.log(isTVShows)
-    // console.log('---------PickingScreen------')
 
     const makeArray = () => {
         console.log('----------New Game-------------')
@@ -63,33 +45,13 @@ const PickingScreen = props => {
         if (isBasics) {
             locationArray.push(Basics)
         }
-        if (isBasics2) {
-            locationArray.push(Basics2)
+        if (isAsia) {
+            locationArray.push(Asia)
         }
-        if (isBasics3) {
-            locationArray.push(Basics3)
+        if (isEurope) {
+            locationArray.push(Europe)
         }
-        if (isBasics4) {
-            locationArray.push(Basics4)
-        }
-        if (isExotic) {
-            locationArray.push(Exotic)
-        }
-        if (isExotic2) {
-            locationArray.push(Exotic2)
-        }
-        if (isMovies) {
-            locationArray.push(Movies)
-        }
-        if (isTown) {
-            locationArray.push(Town)
-        }
-        if (isTVShows) {
-            locationArray.push(TVShows)
-        }
-        if (isVideogames) {
-            locationArray.push(Videogames)
-        }
+        
     }
 
     if (select)
@@ -125,9 +87,7 @@ const PickingScreen = props => {
         }
         else if (roleArray.length === 0) {
             props.navigation.navigate({routeName: 'Game', params: {
-                isBasics: isBasics, isBasics2: isBasics2, isMovies: isMovies, isTVShows: isTVShows,
-                isExotic: isExotic, isExotic2: isExotic2, isTown: isTown, isVideogames: isVideogames,
-                isBasics3: isBasics3, isBasics4: isBasics4,
+                isBasics: isBasics, isAsia: isAsia, isEurope: isEurope
 
             }})
         }
