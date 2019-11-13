@@ -23,6 +23,7 @@ const LocationScreen = props => {
     const Basics = <BasicPack />;
     const Asia = <AsiaPack />;
     const Europe = <EuropePack />;
+    const Nothing = <View></View>;
     
     
     const [isOpenBasics, setIsOpenBasic] = useState(true);

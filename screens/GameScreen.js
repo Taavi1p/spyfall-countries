@@ -87,10 +87,6 @@ const GameScreen = props => {
     if (isEurope) {
         EuropePics = <Europe/>
     }
-    
-
-    console.log(isMovies);
-    console.log(isVideogames);
 
 
     return (

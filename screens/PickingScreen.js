@@ -105,8 +105,6 @@ const PickingScreen = props => {
         gotIt = <Animatable.View animation="fadeIn" duration={2200} delay={2400} style={{width: '100%', height: 60}}></Animatable.View>
     }
 
-    console.log(isMovies);
-    console.log(isVideogames);
 
     return (
         <View style={{flex: 1}}>
