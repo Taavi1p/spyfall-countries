@@ -1,38 +1,38 @@
 export default [
 [
     'United Kingdom',
-    [ 'pilot', 'co-pilot', 'flight attendant', 'engineer', 'First-class passenger', 'economy-class passenger']
+    [ 'tourist', 'president', 'business man', 'farmer', 'teacher', 'office worker', 'farmer wife', 'little kid']
 ],
 [
     'Italy',
-    [ 'pilot', 'co-pilot', 'flight attendant', 'engineer', 'First-class passenger', 'economy-class passenger']
+    [ 'tourist', 'president', 'business man', 'farmer', 'teacher', 'office worker', 'farmer wife', 'little kid']
 ],
 [
     'Spain',
-    [ 'pilot', 'co-pilot', 'flight attendant', 'engineer', 'First-class passenger', 'economy-class passenger']
+    [ 'tourist', 'president', 'business man', 'farmer', 'teacher', 'office worker', 'farmer wife', 'little kid']
 ],
 [
     'Greece',
-    [ 'pilot', 'co-pilot', 'flight attendant', 'engineer', 'First-class passenger', 'economy-class passenger']
+    [ 'tourist', 'president', 'business man', 'farmer', 'teacher', 'office worker', 'farmer wife', 'little kid']
 ],
 [
     'Norway',
-    [ 'pilot', 'co-pilot', 'flight attendant', 'engineer', 'First-class passenger', 'economy-class passenger']
+    [ 'tourist', 'president', 'business man', 'farmer', 'teacher', 'office worker', 'farmer wife', 'little kid']
 ],
 [
     'Ukraine',
-    [ 'pilot', 'co-pilot', 'flight attendant', 'engineer', 'First-class passenger', 'economy-class passenger']
+    [ 'tourist', 'president', 'business man', 'farmer', 'teacher', 'office worker', 'farmer wife', 'little kid']
 ],
 [
     'Switzerland',
-    [ 'pilot', 'co-pilot', 'flight attendant', 'engineer', 'First-class passenger', 'economy-class passenger']
+    [ 'tourist', 'president', 'business man', 'farmer', 'teacher', 'office worker', 'farmer wife', 'little kid']
 ],
 [
     'Ireland',
-    [ 'pilot', 'co-pilot', 'flight attendant', 'engineer', 'First-class passenger', 'economy-class passenger']
+    [ 'tourist', 'president', 'business man', 'farmer', 'teacher', 'office worker', 'farmer wife', 'little kid']
 ],
 [
     'Finland',
-    [ 'pilot', 'co-pilot', 'flight attendant', 'engineer', 'First-class passenger', 'economy-class passenger']
+    [ 'tourist', 'president', 'business man', 'farmer', 'teacher', 'office worker', 'farmer wife', 'little kid']
 ]
 ]

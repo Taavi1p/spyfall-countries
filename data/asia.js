@@ -1,38 +1,38 @@
 export default [
     [
         'Taiwan',
-        [ 'pilot', 'co-pilot', 'flight attendant', 'engineer', 'First-class passenger', 'economy-class passenger']
+        [ 'tourist', 'president', 'business man', 'farmer', 'teacher', 'office worker', 'farmer wife', 'little kid']
     ],
     [
         'India',
-        [ 'pilot', 'co-pilot', 'flight attendant', 'engineer', 'First-class passenger', 'economy-class passenger']
+        [ 'tourist', 'president', 'business man', 'farmer', 'teacher', 'office worker', 'farmer wife', 'little kid']
     ],
     [
         'Saudi Arabia',
-        [ 'pilot', 'co-pilot', 'flight attendant', 'engineer', 'First-class passenger', 'economy-class passenger']
+        [ 'tourist', 'president', 'business man', 'farmer', 'teacher', 'office worker', 'farmer wife', 'little kid']
     ],
     [
        'Singapore',
-       [ 'pilot', 'co-pilot', 'flight attendant', 'engineer', 'First-class passenger', 'economy-class passenger'] 
+       [ 'tourist', 'president', 'business man', 'farmer', 'teacher', 'office worker', 'farmer wife', 'little kid']
     ],
     [
         'South Korea',
-        [ 'pilot', 'co-pilot', 'flight attendant', 'engineer', 'First-class passenger', 'economy-class passenger']
+        [ 'tourist', 'president', 'business man', 'farmer', 'teacher', 'office worker', 'farmer wife', 'little kid']
     ],
     [
        'Pakistan',
-       [ 'pilot', 'co-pilot', 'flight attendant', 'engineer', 'First-class passenger', 'economy-class passenger'] 
+       [ 'tourist', 'president', 'business man', 'farmer', 'teacher', 'office worker', 'farmer wife', 'little kid']
     ],
     [
         'Hong Kong',
-        [ 'pilot', 'co-pilot', 'flight attendant', 'engineer', 'First-class passenger', 'economy-class passenger']
+        [ 'tourist', 'president', 'business man', 'farmer', 'teacher', 'office worker', 'farmer wife', 'little kid']
     ],
     [
         'Vietnam',
-        [ 'pilot', 'co-pilot', 'flight attendant', 'engineer', 'First-class passenger', 'economy-class passenger']
+        [ 'tourist', 'president', 'business man', 'farmer', 'teacher', 'office worker', 'farmer wife', 'little kid']
     ],
     [
         'Israel',
-        [ 'pilot', 'co-pilot', 'flight attendant', 'engineer', 'First-class passenger', 'economy-class passenger']
+        [ 'tourist', 'president', 'business man', 'farmer', 'teacher', 'office worker', 'farmer wife', 'little kid']
     ]
 ]
