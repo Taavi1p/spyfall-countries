@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import { StyleSheet, View, ScrollView } from 'react-native';
+import LocationHeader from '../components/LocationHeader';
 import CustomHeader from '../components/CustomHeader';
 import BasicPack from '../packs/BasicPack';
 import AsiaPack from '../packs/AsiaPack';
