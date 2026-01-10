@@ -8,7 +8,7 @@
     "eject": "expo eject"
   },
   "dependencies": {
-    "expo": "^35.0.1",
+    "expo": "^48.0.0",
     "expo-cli": "^3.4.1",
     "expo-font": "^7.0.0",
     "expo-linear-gradient": "~7.0.0",
